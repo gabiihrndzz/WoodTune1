@@ -1,0 +1,54 @@
+    <script>
+    const menu = document.getElementById('menu');
+    const overlay = document.getElementById('overlay');
+    const toggleMenu = document.getElementById('toggleMenu');
+    const content = document.getElementById('content');
+    const body = document.body; // Referencia al body
+
+    toggleMenu.addEventListener('click', () => {
+        const isOpen = menu.classList.toggle('open');
+        overlay.classList.toggle('active');
+        content.style.filter = isOpen ? 'blur(5px)' : 'none';
+
+        // Agregar o quitar la clase para desactivar el scroll
+        body.classList.toggle('no-scroll', isOpen);
+
+        // Verificar si el menú está vacío y aplicar clase
+        if (menu.children.length === 0) {
+            // Crear un fondo difuminado si no hay botones
+            const blurredBackground = document.createElement('div');
+            blurredBackground.classList.add('blurred');
+            document.body.appendChild(blurredBackground);
+        } else {
+            // Eliminar el fondo difuminado si hay botones
+            const blurredBackground = document.querySelector('.blurred');
+            if (blurredBackground) {
+                blurredBackground.remove();
+            }
+        }
+    });
+
+    overlay.addEventListener('click', () => {
+        menu.classList.remove('open');
+        overlay.classList.remove('active');
+        content.style.filter = 'none';
+
+        // Quitar la clase para habilitar el scroll
+        body.classList.remove('no-scroll');
+
+        // Asegúrate de quitar el fondo difuminado al cerrar
+        const blurredBackground = document.querySelector('.blurred');
+        if (blurredBackground) {
+            blurredBackground.remove();
+        }
+    });
+
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+
+        // Mantener el menú en posición fija
+        menu.style.position = 'fixed'; // Asegura que el menú sea fijo
+        menu.style.top = '0'; // Coloca el menú en la parte superior
+    });
+
+        </script>

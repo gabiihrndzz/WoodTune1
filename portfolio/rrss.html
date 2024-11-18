@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" href="imagenes_video/logo_.webp" type="image/x-icon">
+    <title>WoodTune - Redes Sociales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+/* Aplica el siguiente estilo a .wrapper */
+        .wrapper {
+            display: flex;
+            justify-content: center; /* Centrado horizontal */
+            align-items: center; /* Centrado vertical */
+            height: 150px; /* Ocupa toda la altura de la página */
+            z-index: 10;
+            text-align: center;
+        }
+        .wrapper .icon {
+            margin: 0 20px;
+            text-align: center;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+            transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .icon span {
+            display: block;
+            height: 60px;
+            width: 60px;
+            background: #fff;
+            border-radius: 50%;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+            transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .icon span i {
+            line-height: 60px;
+            font-size: 25px;
+        }
+
+        .wrapper .icon .tooltip {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            background: #fff;
+            color: #fff;
+            padding: 10px 18px;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 25px;
+            opacity: 0;
+            pointer-events: none;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .icon:hover .tooltip {
+            top: -70px;
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .icon .tooltip:before {
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 15px;
+            background: #fff;
+            left: 50%;
+            bottom: -6px;
+            transform: translateX(-50%) rotate(45deg);
+            transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+
+        
+        .wrapper .icon:hover span {
+            color: #fff;
+        }
+        .wrapper .icon:hover span,
+        .wrapper .icon:hover .tooltip {
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+        }
+
+
+
+        .wrapper .spotify:hover span,
+        .wrapper .spotify:hover .tooltip,
+        .wrapper .spotify:hover .tooltip:before {
+            background: #1ed760;
+        }
+
+        .wrapper .mail:hover span,
+        .wrapper .mail:hover .tooltip,
+        .wrapper .mail:hover .tooltip:before {
+            background: #46C1F6;
+        }
+
+        .wrapper .instagram:hover span,
+        .wrapper .instagram:hover .tooltip,
+        .wrapper .instagram:hover .tooltip:before {
+            background: #e1306c;
+        }
+
+        .wrapper .github:hover span,
+        .wrapper .github:hover .tooltip,
+        .wrapper .github:hover .tooltip:before {
+            background: #333;
+        }
+
+        .wrapper .youtube:hover span,
+        .wrapper .youtube:hover .tooltip,
+        .wrapper .youtube:hover .tooltip:before {
+            background: #DE463B;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <header class="header-h">
+        <div class="container"> 
+            <h1 class="tituloWoodTune">WoodTune</h1>
+            <img src="../imagenes_video/logo_.webp" class="fotoheaderd" alt="Logo" height="200" />
+        </div>
+    </header>
+    
+    <div class="overlay" id="overlay"></div>
+    <div class="menu" id="menu">
+        <a href="../index.html"><div class="btn">INICIO</div></a>
+        <a href="fotos.html"><div class="btn">FOTOS</div></a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-ffJLxKEfIXEeiqDhL4HusPqwPZwe4JpqsZRWhpiQeGpR0A/viewform?usp=sf_link"><div class="btn">FORMULARIO</div></a>
+        <a href="nosotros.html"><div class="btn">SOBRE NOSOTROS</div></a>
+        <a href="rrss.html"><div class="btn">REDES SOCIALES</div></a>    
+        <div class="submenu-container">
+            <div class="btn submenu-btn">Actividades Clase</div>
+            <div class="submenu">
+                <div class="submenu-container">
+                    <a href="Ejercicios/uni0.html"><div class="btn">Unidad 1</div></a>
+                </div>
+                <div class="submenu-container">
+                    <div class="btn submenu-btn">Unidad 2</div>
+                    <div class="submenu">
+                        <a href="Ejercicios/un2ej1.html"><div class="btn">Breve Segmentación</div></a>
+                        <a href="Ejercicios/un2ej2.html"><div class="btn">Mapa de Empatía</div></a>
+                        <a href="Ejercicios/un2ej3.html"><div class="btn">Modelo de Negocio</div></a>
+                    </div>
+                </div>
+                <div class="submenu-container">
+                    <div class="btn submenu-btn">Unidad 3</div>
+                    <div class="submenu">
+                        <a href="Ejercicios/un3ej1.html"><div class="btn">Analisis de la Competencia</div></a>
+                        <a href="Ejercicios/un3ej2.html"><div class="btn">DAFO - CAME</div></a>
+                        <a href="Ejercicios/un3ej3.html"><div class="btn">Cultura Corporativa</div></a>
+                        <a href="Ejercicios/un3ej4.html"><div class="btn">Responsabilidad Social Corporativa</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="content">
+        <div>
+        <button class="btn1" id="toggleMenu">Abrir Menú</button>
+        <main class="descripcion-inner">
+            <p class="p1">Contamos con varias redes sociales como las siguientes para escuchar cualquier tipo de duda o pregnta acerca de nuestro producto.</p>
+            <p class="p1">Hemos puesto también la cuenta de Spotify del principal desarrollador de la página Web</p>
+            <p class="p1">Y por último pero no menos importante tenemos cuenta en GitHub para los más curiosos que quieran ver el código de todas las páginas de este proyecto tanto html como css. </p>
+        </main>
+    </div>
+    <div>
+    <div class="wrapper">
+        <a href="https://open.spotify.com/user/44jgy38zys1jc9kfx4ssemb6i" target="_blank">
+            <div class="icon spotify">
+                <div class="tooltip">Spotify</div>
+                <span><i class="fab fa-spotify"></i></span>
+            </div>
+        </a>
+        
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=woodtune6@gmail.com" target="_blank">
+            <div class="icon mail">
+                <div class="tooltip">Gmail</div>
+                <span><i class="fas fa-envelope"></i></span>
+            </div>
+        </a>
+        
+        <a href="https://www.instagram.com/woodtune_cifp/" target="_blank">
+            <div class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i></span>
+            </div>
+        </a>
+        
+        <a href="https://github.com/gabiihrndzz/WoodTune" target="_blank">
+            <div class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span>
+            </div>
+        </a>
+    </div>
+    </div>
+    </body>
+<footer>
+    <div class="footer-container">
+        <!-- Primera columna: Información y enlaces importantes -->
+        <div class="footer-info">
+            <h2 class="h2footer">Información</h2>
+            <ul>
+                <li><a href="nosotros.html">Quiénes somos</a></li>
+                <li><a href="politicaPrivacidad.html">Política de Privacidad</a></li>
+                <li><a href="AvisoLegal.html">Aviso Legal</a></li>
+            </ul>
+        </div>
+        <div>
+            <img width="300px" src="../imagenes_video/logo_.webp">
+        </div>
+
+        <!-- Segunda columna: Redes sociales -->
+        <div class="footer-social">
+            <h2 class="h2footer">Síguenos</h2>
+            <a href="https://www.instagram.com/woodtune_cifp/" target="_blank">
+                <span class="fab fa-instagram"></span> Instagram
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=woodtune6@gmail.com" target="_blank">
+                <span class="fas fa-envelope"></span> Gmail
+            </a>
+            <a href="https://github.com/gabiihrndzz/WoodTune" target="_blank">
+                <span class="fab fa-github"></span> GitHub
+            </a>
+            <a href="https://open.spotify.com/user/44jgy38zys1jc9kfx4ssemb6i" target="_blank">
+                <span class="fab fa-spotify"></span> Spotify
+            </a>
+        </div>
+    </div>
+
+    <!-- Derechos reservados -->
+    <div class="footer-rights">
+        <p>© 2024 WoodTune | Todos los derechos reservados</p>
+    </div>
+</footer>
+
+<script>
+        const menu = document.getElementById('menu');
+        const overlay = document.getElementById('overlay');
+        const toggleMenu = document.getElementById('toggleMenu');
+        const content = document.getElementById('content');
+        const body = document.body; // Referencia al body
+    
+        toggleMenu.addEventListener('click', () => {
+            const isOpen = menu.classList.toggle('open');
+            overlay.classList.toggle('active');
+            content.style.filter = isOpen ? 'blur(5px)' : 'none';
+    
+            // Agregar o quitar la clase para desactivar el scroll
+            body.classList.toggle('no-scroll', isOpen);
+    
+            // Verificar si el menú está vacío y aplicar clase
+            if (menu.children.length === 0) {
+                menu.classList.add('blurred');
+            } else {
+                menu.classList.remove('blurred');
+            }
+        });
+    
+        overlay.addEventListener('click', () => {
+            menu.classList.remove('open');
+            overlay.classList.remove('active');
+            content.style.filter = 'none';
+    
+            
+            // Quitar la clase para habilitar el scroll
+            body.classList.remove('no-scroll');
+            menu.classList.remove('blurred'); // Asegúrate de quitar la clase al cerrar
+        });
+            // Mantener el menú en posición fija
+            menu.style.position = 'fixed'; // Asegura que el menú sea fijo
+            menu.style.top = '0'; // Coloca el menú en la parte superior
+        
+    
+            const menu1 = document.getElementById('toggleMenu');
+    
+            window.addEventListener('scroll', function() {
+                const scrollPosition1 = window.scrollY;
+    
+                if (scrollPosition1 < 300) {
+                    menu1.style.position = 'absolute'; // Mantener en posición absoluta
+                    menu1.style.top = '300px'; // Posición inicial
+                } else {
+                    menu1.style.position = 'fixed'; // Cambiar a posición fija
+                    menu1.style.top = '0'; // Coloca el menú en la parte superior
+                }
+            });
+            </script>
+            <script>
+                // Selección de los botones de submenú
+                const submenuBtns = document.querySelectorAll('.submenu-btn');
+            
+                submenuBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const submenu = btn.nextElementSibling; // Selecciona el siguiente submenú
+                        if (submenu) {
+                            submenu.classList.toggle('open'); // Alterna la clase 'open' para mostrar/ocultar
+                        }
+                    });
+                });
+            </script>
+                  
+</body>
+</html>
