@@ -337,120 +337,190 @@ font-size: 30px;
 }
 
 
-@media (max-width: 600px) {
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
     h1 {
-        font-size: 2.5em; /* Reduce el tamaño del título en móviles */
+        font-size: 2.5em;
     }
     p {
-        font-size: 1em; /* Reduce el tamaño del párrafo en móviles */
+        font-size: 1em;
         text-align: center;
     }
-    .descripcion-inner  {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 100px;
-    }   
-  
-    .tituloWoodTune {
-        font-family: 'MonotypeOldEnglishStd', serif; /* Applies the custom font */
-        text-align: left;
-        flex-grow: 1; /* Esto permite que el texto ocupe el centro */
-        font-size: 1.5em;    
-}
-    .fotoheaderd{
+    .descripcion-inner {
+        margin: 100px 0 0 0;
+    }
+
+    .fotoheaderd {
         max-width: 30%;
         height: auto;
         display: grid;
         place-items: center;
-
     }
     .header-h {
         padding: 10px;
         color: white;
-        background-size: cover; /* Asegura que la imagen cubra todo el header */
-        background-position: center calc(0% - 60px); 
-        z-index:800;
+        background-size: cover;
+        background-position: center calc(0% - 60px);
+        z-index: 800;
     }
     #toggleMenu {
-    margin-top:-4em;
-    text-align: center;
-}   
-}
-
-@media (max-width: 900px) {
-    h1 {
-        font-size: 2.5em; /* Reduce el tamaño del título en móviles */
-    }
-    p {
-        font-size: 1em; /* Reduce el tamaño del párrafo en móviles */
+        margin-top: -4em;
         text-align: center;
     }
-    .descripcion-inner  {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 100px;
-    }   
-  
-    .tituloWoodTune {
-        font-family: 'MonotypeOldEnglishStd', serif; /* Applies the custom font */
-        text-align: left;
-        flex-grow: 1; /* Esto permite que el texto ocupe el centro */
-        font-size: 2.5em;    
 }
-    .fotoheaderd{
-        max-width: 30%;
+
+/* Estilos para tablets y pantallas medianas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1em;
+        text-align: center;
+    }
+    .descripcion-inner {
+        margin: 100px 0 0 0;
+    }
+
+    
+    .fotoheaderd {
+        max-width: 20%; /* Diferencia en el tamaño de imagen */
         height: auto;
         display: grid;
         place-items: center;
-
     }
     .header-h {
         padding: 10px;
         color: white;
-        background-size: cover; /* Asegura que la imagen cubra todo el header */
-        background-position: center calc(0% - 60px); 
-        z-index:800;
+        background-size: cover;
+        background-position: center calc(0% - 60px);
+        z-index: 800;
     }
     #toggleMenu {
-    margin-top:-4em;
-    text-align: center;
-}   }
-
-@media (max-width: 1900px) {
-    h1 {
-        font-size: 2.5em; /* Reduce el tamaño del título en móviles */
-    }
-    p {
-        font-size: 1em; /* Reduce el tamaño del párrafo en móviles */
+        margin-top: -4em;
         text-align: center;
     }
-    .descripcion-inner  {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 100px;
-    }   
-  
-    .tituloWoodTune {
-        font-family: 'MonotypeOldEnglishStd', serif; /* Applies the custom font */
-        text-align: left;
-        flex-grow: 1; /* Esto permite que el texto ocupe el centro */
-        font-size: 2.5em;    
 }
-    .fotoheaderd{
-        max-width: 30%;
+
+/* Estilos para pantallas grandes (desktop) */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1em;
+        text-align: center;
+    }
+    .descripcion-inner {
+        margin: 100px 0 0 0;
+    }
+    .tituloWoodTune {
+        margin-right: -240px;
+        font-family: 'Fredoka', sans-serif; 
+        font-size: 70px;
+        color: #fff; 
+        text-shadow: 10px 20px 30px rgba(0, 0, 0, 0.7); 
+        flex-grow: 1; /* Permite que el texto crezca para ocupar el espacio */
+    }
+    
+    img {
+        max-width: 100%;
         height: auto;
         display: grid;
         place-items: center;
-
+        text-align: center;
     }
     .header-h {
         padding: 10px;
         color: white;
-        background-size: cover; /* Asegura que la imagen cubra todo el header */
-        background-position: center calc(0% - 60px); 
-        z-index:800;
+        background-size: cover;
+        background-position: center calc(0% - 60px);
+        z-index: 800;
     }
     #toggleMenu {
-    margin-top:-4em;
-    text-align: center;
-}   }
+        margin-top: -4em;
+        text-align: center;
+    }
+
+}
+
+/* Estilos para pantallas extra grandes */
+@media (max-width: 1400px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1em;
+        text-align: center;
+    }
+    .descripcion-inner {
+        margin: 100px 0 0 0;
+    }
+    .tituloWoodTune {
+        margin-right: -240px;
+        font-family: 'Fredoka', sans-serif; 
+        font-size: 70px;
+        color: #fff; 
+        text-shadow: 10px 20px 30px rgba(0, 0, 0, 0.7); 
+        flex-grow: 1; /* Permite que el texto crezca para ocupar el espacio */
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+    .header-h {
+        padding: 10px;
+        color: white;
+        background-size: cover;
+        background-position: center calc(0% - 60px);
+        z-index: 800;
+    }
+    #toggleMenu {
+        margin-top: -4em;
+        text-align: center;
+    }
+
+}
+@media (max-width: 1600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1em;
+        text-align: center;
+    }
+    .descripcion-inner {
+        margin: 100px 0 0 0;
+    }
+    .tituloWoodTune {
+        margin-right: -240px;
+        font-family: 'Fredoka', sans-serif; 
+        font-size: 70px;
+        color: #fff; 
+        text-shadow: 10px 20px 30px rgba(0, 0, 0, 0.7); 
+        flex-grow: 1; /* Permite que el texto crezca para ocupar el espacio */
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+    .header-h {
+        padding: 10px;
+        color: white;
+        background-size: cover;
+        background-position: center calc(0% - 60px);
+        z-index: 800;
+    }
+    #toggleMenu {
+        margin-top: -4em;
+        text-align: center;
+    }
+}
