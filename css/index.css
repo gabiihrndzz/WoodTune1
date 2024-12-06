@@ -348,6 +348,11 @@ font-size: 30px;
 }
 
 @media (min-width: 1px) and (max-width: 576px)  {
+    .tituloWoodTune{
+        font-size:40px;
+        text-align: flex-start;
+        display: flex;
+    }
     h1 {
         font-size: 2.5em;
     }
@@ -417,6 +422,12 @@ font-size: 30px;
 }
 
 @media (min-width: 576px) and (max-width: 768px)  {
+    .tituloWoodTune{
+        font-size:60px;
+        text-align: flex-start;
+        display: flex;
+    }
+
     h1 {
         font-size: 2.5em;
     }
@@ -433,6 +444,11 @@ font-size: 30px;
         height: auto;
         display: grid;
         place-items: center;
+    }
+    footer div img{
+        justify-content: flex;
+        width: 70%;
+        height: auto;
     }
     .header-h {
         padding: 10px;
@@ -459,7 +475,11 @@ font-size: 30px;
         margin: 100px 0 0 0;
     }
 
-    
+    footer div img{
+        justify-content: flex;
+        width: 70%;
+        height: auto;
+    }
     .fotoheaderd {
         max-width: 20%; /* Diferencia en el tamaño de imagen */
         height: auto;
