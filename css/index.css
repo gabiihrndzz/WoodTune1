@@ -4,6 +4,17 @@
     font-style: normal;
 }
 
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 .logo {
     height: 100px;
     margin-left: 20px;
@@ -336,9 +347,76 @@ font-size: 30px;
 font-size: 30px;
 }
 
+@media (min-width: 1px) and (max-width: 576px)  {
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1em;
+    }
 
-/* Estilos para pantallas pequeñas (móviles) */
-@media (max-width: 576px) {
+    .p1 {
+        text-align: center;
+        font-size: 1.3em;
+        text-align: justify;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+    }
+
+    .cards .card .image{
+        height: 100%;
+        max-width: 100%;
+        justify-content: space-around;
+    }
+
+    .cards .card img{
+        max-width: 100%;
+        height: 100%;
+    }
+    .descripcion-inner {
+        margin: 100px 0 0 0;
+    }
+
+    .fotoheaderd {
+        max-width: 30%;
+        height: auto;
+        display: grid;
+        place-items: center;
+    }
+    .header-h {
+        padding: 10px;
+        color: white;
+        background-size: cover;
+        background-position: center calc(0% - 60px);
+        z-index: 800;
+    }
+    #toggleMenu {
+        margin-top: -4em;
+        text-align: center;
+    }
+    footer div img{
+        justify-content: flex;
+        width: 70%;
+        height: auto;
+    }
+    .pfooter{
+        font-size: 7px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+        text-align: center;
+    }
+    
+    .header-footerR .p{
+    font-size: 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px)  {
     h1 {
         font-size: 2.5em;
     }
@@ -369,8 +447,7 @@ font-size: 30px;
     }
 }
 
-/* Estilos para tablets y pantallas medianas */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px)  {
     h1 {
         font-size: 2.5em;
     }
@@ -402,8 +479,7 @@ font-size: 30px;
     }
 }
 
-/* Estilos para pantallas grandes (desktop) */
-@media (max-width: 992px) {
+@media (min-width: 992px) and (max-width: 1200px) {
     h1 {
         font-size: 2.5em;
     }
@@ -444,8 +520,7 @@ font-size: 30px;
 
 }
 
-/* Estilos para pantallas extra grandes */
-@media (max-width: 1400px) {
+@media (min-width:1200px) and (max-width: 1440px)  {
     h1 {
         font-size: 2.5em;
     }
@@ -485,7 +560,8 @@ font-size: 30px;
     }
 
 }
-@media (max-width: 1600px) {
+
+@media (min-width:1440px) and (max-width: 1840px){
     h1 {
         font-size: 2.5em;
     }
@@ -524,3 +600,4 @@ font-size: 30px;
         text-align: center;
     }
 }
+
