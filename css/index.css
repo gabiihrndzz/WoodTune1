@@ -347,6 +347,14 @@ font-size: 30px;
 font-size: 30px;
 }
 
+.vidiardo{
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 100%;
+}
+
 @media (min-width: 1px) and (max-width: 576px)  {
     .tituloWoodTune{
         font-size:40px;
